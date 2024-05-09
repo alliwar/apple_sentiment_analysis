@@ -17,22 +17,23 @@ Data was provided from CrowdFlower and downloaded from data.world. Tweets were l
 
 ## Data Exploration, Cleaning and Preprocessing
 
-In order to better analyze the contents of positive and negative sentiments, neutral or uncertain tweets were dropped. It was found that the resounding sentiment towards Apple products at the conference was positive. 
+In order to better analyze the contents of positive and negative sentiments, neutral or uncertain tweets were dropped. The resounding sentiment towards Apple products at the conference was positive. 
 
-Overall sentiment:
+### Overall sentiment:
 <img src="images/overall_sentiment1.jpg" alt="overall_sentiment">
-Product sentiment:
+
+### Product sentiment:
 <img src="images/product_sentiment.jpg" alt="product_sentiment">
 
-Word clouds were created to visualize the top 100 words in tweets rated as either positive or negative. This provided a clear insights into the reasoning of conference attendee’s sentiments towards Apple products. 
+Word clouds were created to visualize the top 100 words in tweets rated as either positive or negative. This provided clear insights into the reasoning of conference attendee’s sentiments toward Apple. 
 
-Top 100 positive tweets wordcloud:
+### Top 100 positive tweets wordcloud:
 <img src="images/positive_top_100.png" alt="positive_top_100">
 
-Top 100 negative tweets wordcloud:
+### Top 100 negative tweets wordcloud:
 <img src="images/negative_top_100.png" alt="negative_top_100">
 
-Before beginning the modeling process, class imbalance needed to be addressed, as positive tweets accounted for significantly more tweets than those with negative sentiment. To balance the data, chatGPT was used to synthetically create 1,477 negative tweets, ensuring they followed the formatting of the original dataset and were relevant to the 2013 SXSW conference. ChatGPT was prompted with example negative tweets to ensure the synthetic ones were comparable in content to the original tweets. 
+Before the modeling process class imbalance was addressed, as positive tweets accounted for significantly more tweets than those with negative sentiment. To balance the data, chatGPT was prompted with example negative tweets to synthetically create 1,477 negative tweets, ensuring they followed the formatting of the original dataset and were relevant to the 2013 SXSW conference.
 
 Preprocessing and feature engineering methods included:
 - Converting emoticons to unique strings
@@ -47,16 +48,16 @@ A train-test split was performed with the standard split of 75% training data an
 
 The evaluation metric used was accuracy, as both positive and negative sentiments were deemed equally important for the purposes of the analysis. 
 
-In order to find the model with the highest accuracy, four classification models were tested: 1) Logistic Regression, 2) Naive Bayes, 3) Support Vector Model (SVM), 4) Random Forest. 
+In order to maximize accuracy and minimize loss, four classification models were tested: 1) Logistic Regression, 2) Naive Bayes, 3) Support Vector Machine, and 4) Random Forest. 
 
 ## Conclusions
 1. Overwhelmingly, the sentiment towards Apple and Apple products at the SXSW conference was positive. In particular, iPad sentiment was very high - 86% of the time the sentiment was positive, as people were excited about the release of the iPad 2.
 
-2. In-person engagement is key. People were thrilled about the temporary pop-up store that Apple created in downtown Austin. This gave consumers who otherwise might have been on the fence an opportunity to test the products for themselves while exploring downtown Austin. Translating that into the present-day, it’s recommended that Apple continues to find innovative retail pathways to create excitement around their products.
+2. In-person engagement is key. People were thrilled about the temporary pop-up store that Apple created in downtown Austin. This gave consumers an opportunity to test the products for themselves while exploring downtown Austin. It is recommended that Apple continues to find innovative retail pathways to create excitement around their products.
 
-3. Form and function are still the keys to making successful products. Conference attendees had negative remarks about the short battery life of apple items. The design of products is key to creating a positive user experience, and it is recommended that Apple continues to innovate their designs to maximize usability.
+3. Form and function are keys to making successful products. Conference attendees had negative remarks about the short battery life of Apple items. The design of products is key to creating a positive user experience, and it is recommended that Apple continues to innovate their designs to maximize usability.
 
-4. Positive sentiment often leads to direct sales. In the earnings report 2 weeks after the SXSW conference, Apple reported a 2% increase in iPhones sales and a 65% increase in iPad sales compared to the year prior.
+4. Positive sentiment often leads to direct sales. In the earnings report immediately after the SXSW conference, Apple reported a 2% increase in iPhone sales and a 65% increase in iPad sales compared to the year prior.
 
 <img src="images/sales.jpg" alt="sales">
 
@@ -69,4 +70,5 @@ In order to find the model with the highest accuracy, four classification models
 
 ## Collaborators:
 - https://github.com/rjlatail
+- https://github.com/alliwar
 - https://github.com/sarahprusaitis
