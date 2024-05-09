@@ -8,7 +8,7 @@ by Rick Lataille, Sarah Prusaitis, and Allison Ward
 - Jupyter notebook saved as index.ipynb
 - Powerpoint presentation saved as presentation.pdf
 
-## Overview
+## Project Overview
 
 This project analyzes the overall sentiment towards Apple products at the SXSW conference in 2013 through the tweets of conference attendees. The SXSW conference is a yearly event in Austin, Texas that revolves around technology, education, music, culture, and politics. The goal is to understand how the public perceives Apple products during this high-profile event and to identify trends or patterns in sentiment. This information will help make data-driven decisions for future product launches and marketing campaigns.
 
@@ -33,18 +33,18 @@ Word clouds were created to visualize the top 100 words in tweets rated as eithe
 ### Top 100 negative tweets wordcloud:
 <img src="images/negative_top_100.png" alt="negative_top_100">
 
-Before the modeling process class imbalance was addressed, as positive tweets accounted for significantly more tweets than those with negative sentiment. To balance the data, chatGPT was prompted with example negative tweets to synthetically create 1,477 negative tweets, ensuring they followed the formatting of the original dataset and were relevant to the 2013 SXSW conference.
+Before the modeling process, class imbalance needed to be addressed as positive tweets accounted for significantly more tweets than those with negative sentiment. To balance the data, chatGPT was prompted with example negative tweets to synthetically create 1,477 negative tweets, ensuring they followed the formatting of the original dataset and were relevant to the 2013 SXSW conference.
 
 Preprocessing and feature engineering methods included:
 - Converting emoticons to unique strings
 - Removing semantically meaningless patterns (mentions, links, etc)
 - Adding limited additional stopwords that likely have no semantic meaning
-- Unigram Tokenization, POS-tagging and Lemmatization
+- Bigram Tokenization, POS-tagging and Lemmatization
 - TF-IDF Vectorization
 
 ## Modeling 
 
-A train-test split was performed with the standard split of 75% training data and 25% testing data.
+A train-test split was performed with the standard split of 80% training data and 20% testing data.
 
 The evaluation metric used was accuracy, as both positive and negative sentiments were deemed equally important for the purposes of the analysis. 
 
