@@ -3,9 +3,14 @@
 # Apple Sentiment Analysis at the SXSW 2013 Conference
 by Rick Lataille, Sarah Prusaitis, and Allison Ward
 
+## Repository contents:
+- Data folder containing .csv files of the datset and synthetically generated tweets
+- Jupyter notebook saved as index.ipynb
+- Powerpoint presentation saved as presentation.pdf
+
 ## Overview
 
-This project analyzes the overall sentiment towards Apple products at the SXSW conference in 2013 through the tweets of conference attendees. The SXSW conference is a yearly event in Austin, Texas that revolves around technology, education, music, culture, and politics. The goal is to understand how the public perceives Apple products during this high-profile event and to identify trends or patterns in sentiment. By doing so, the aim is to optimize marketing strategies and messaging to better resonate with Apple’s target audience, ultimately driving brand engagement and product sales. This information will help make data-driven decisions for future product launches and marketing campaigns.
+This project analyzes the overall sentiment towards Apple products at the SXSW conference in 2013 through the tweets of conference attendees. The SXSW conference is a yearly event in Austin, Texas that revolves around technology, education, music, culture, and politics. The goal is to understand how the public perceives Apple products during this high-profile event and to identify trends or patterns in sentiment. This information will help make data-driven decisions for future product launches and marketing campaigns.
 
 ## Data Overview
 Data was provided from CrowdFlower and downloaded from data.world. Tweets were labeled as positive, negative, neutral, or uncertain in emotion by human raters. 
@@ -49,7 +54,7 @@ In order to find the model with the highest accuracy, four classification models
 
 2. In-person engagement is key. People were thrilled about the temporary pop-up store that Apple created in downtown Austin. This gave consumers who otherwise might have been on the fence an opportunity to test the products for themselves while exploring downtown Austin. Translating that into the present-day, it’s recommended that Apple continues to find innovative retail pathways to create excitement around their products.
 
-3. Form and function are still the keys to making successful products. Conference attendees had negative remarks about the short battery life of apple items. The design of products is key to creating a positive user experience, and it is recommended that Apple continues to innovate their designs to maximize usability
+3. Form and function are still the keys to making successful products. Conference attendees had negative remarks about the short battery life of apple items. The design of products is key to creating a positive user experience, and it is recommended that Apple continues to innovate their designs to maximize usability.
 
 4. Positive sentiment often leads to direct sales. In the earnings report 2 weeks after the SXSW conference, Apple reported a 2% increase in iPhones sales and a 65% increase in iPad sales compared to the year prior.
 
@@ -62,6 +67,6 @@ In order to find the model with the highest accuracy, four classification models
 - https://data.world/crowdflower/brands-and-product-emotions
 - https://www.apple.com/newsroom/2013/04/23Apple-Reports-Second-Quarter-Results/
 
-# Collaborators:
+## Collaborators:
 - https://github.com/rjlatail
 - https://github.com/sarahprusaitis
